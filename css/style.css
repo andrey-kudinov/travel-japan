@@ -44,11 +44,12 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-weight: normal;
-  color: black;
+  color: #102746;
+  max-width: 100%;
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
