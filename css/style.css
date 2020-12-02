@@ -292,7 +292,7 @@ img {
 .benefits__card-desc {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 39;
+  margin-bottom: 39px;
 }
 
 .benefits__card-more {
@@ -346,7 +346,8 @@ img {
 .places__cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .places__card {
@@ -475,8 +476,9 @@ img {
 
 .top__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 57px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 57px;
+  grid-row-gap: 57px;
 }
 
 .top__card-pic {
@@ -487,6 +489,7 @@ img {
 .top__card {
   display: flex;
   flex-direction: column;
+  grid-column-start: span 2;
 }
 
 .top__card-stats {
@@ -630,9 +633,78 @@ img {
 
 /* Media start */
 
+@media screen and (max-width: 960px) {
+  .benefits {
+    margin-bottom: 75px;
+  }
+
+  .benefits__card {
+    margin-bottom: 60px;
+  }
+
+  .search-form__field {
+    margin-bottom: 25px;
+  }
+  .benefits__cards {
+    padding: 0 15px;
+    grid-column-gap: 35px;
+  }
+  .benefits__title {
+    padding: 55px 15px;
+  }
+  .benefits__wrap {
+    box-shadow: none;
+  }
+  .places__card_size_lg {
+    grid-column: span 6;
+  }
+  .places__card_size_sm {
+    grid-column: span 6;
+  }
+  .places {
+    margin-bottom: 75px;
+  }
+  .toures__tour {
+    grid-column-gap: 35px;
+    margin-bottom: 30px;
+  }
+  .tour__info {
+    padding-left: 0;
+  }
+  .tour__title {
+    margin-bottom: 15px;
+  }
+  .tour__desc {
+    margin-bottom: 15px;
+  }
+  .top__cards {
+    grid-column-gap: 25px;
+    grid-row-gap: 55px;
+  }
+  .top__card {
+    grid-column: span 3;
+  }
+  .top__card-pic {
+    margin-bottom: 25px;
+  }
+  .footer {
+    padding: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .section-title::after {
+    width: 30%;
+  }
   .header__burger {
     display: block;
+  }
+  .header__wrapper {
+    padding-top: 28px;
+    margin: 0;
   }
   .header__nav {
     width: 100%;
@@ -647,9 +719,8 @@ img {
     transition: 0.4s linear;
   }
 
-  .header__nav_active{
+  .header__nav_active {
     transform: translateX(0);
-
   }
   .header__item {
     width: 100%;
@@ -684,6 +755,109 @@ img {
   }
   .header__nav-close-line:last-child {
     transform: translateY(-50%) rotate(315deg);
+  }
+
+  .intro {
+    padding-top: 125px;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .intro__subtitle {
+    font-size: 14px;
+  }
+
+  .search-form__field {
+    margin-right: 0;
+    width: 100%;
+    padding-bottom: 12px;
+    background: url(../img/svg/circle-ico.svg) no-repeat left top;
+  }
+  .search-form__field::placeholder{
+    font-size: 16px;
+  }
+  .search-form__submit {
+    width: 100%;
+  }
+
+  .benefits__wrap {
+    margin-bottom: 76px;
+  }
+  .benefits__card {
+    grid-column: span 3;
+    margin-bottom: 40px;
+  }
+  .benefits__card-pic {
+    margin-bottom: 20px;
+  }
+  .benefits__title {
+    margin-bottom: 12px;
+  }
+  .benefits__card-desc {
+    margin-bottom: 20px;
+  }
+  .places {
+    margin-bottom: 76px;
+  }
+  .places__card-pic_size_lg, .places__card-pic_size_sm {
+    height: 230px;
+  }
+  .places__view-all {
+    margin-bottom: 25px;
+  }
+  .places__caption {
+    margin-bottom: 0;
+  }
+  .toures {
+    margin-bottom: 76px;
+  }
+  .tour__pic, .tour__info {
+    grid-column: span 2;
+  }
+  .tour__pic {
+    margin-bottom: 12px;
+  }
+  .tour__pic_mob-first {
+    grid-row-start: -1;
+  }
+  .toures__tour {
+    margin-bottom: 50px;
+  }
+  .top {
+    margin-bottom: 76px;
+  }
+  .top__card {
+    grid-column: span 6;
+  }
+  .top__card-stats {
+    max-width: 386px;
+  }
+  .top__card-desc {
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer__logo {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .footer__nav {
+    width: 100%;
+  }
+  .footer__menu {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  .header__nav {
+    padding: 75px 30px;
   }
 }
 
