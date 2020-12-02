@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Discover Amazing places in Japan</title>
   </head>
   <body>
@@ -24,16 +23,16 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link">Articles</a>
+                <a href="#articles" class="header__link js-scroll">Articles</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Locations</a>
+                <a href="#locations" class="header__link js-scroll">Locations</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Videos</a>
+                <a href="#videos" class="header__link js-scroll">Videos</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Sign in</a>
+                <a href="#sign-in" class="header__link js-scroll">Sign in</a>
               </li>
             </ul>
             <div class="header__nav-close">
@@ -54,7 +53,7 @@
     <!-- Main start -->
     <main class="main">
       <!-- Intro start -->
-      <section class="intro">
+      <section class="intro" id='sign-in'>
         <div class="wrapper">
           <h1 class="intro__title">Discover Amazing places in Japan</h1>
           <p class="intro__subtitle">
@@ -157,7 +156,7 @@
           <div class="places__cards">
             <figure class="places__card places__card_size_lg">
               <img
-                src="./img/place-1.jpg"
+                src="./img/place-1-min.jpg"
                 alt="Mount Fuji"
                 class="places__card-pic places__card-pic_size_lg"
               />
@@ -167,7 +166,7 @@
 
             <figure class="places__card places__card_size_lg">
               <img
-                src="./img/place-2.jpg"
+                src="./img/place-2-min.jpg"
                 alt="Kyoto"
                 class="places__card-pic places__card-pic_size_lg"
               />
@@ -177,7 +176,7 @@
 
             <figure class="places__card places__card_size_sm">
               <img
-                src="./img/place-3.jpg"
+                src="./img/place-3-min.jpg"
                 alt="Tokyo"
                 class="places__card-pic places__card-pic_size_sm"
               />
@@ -187,7 +186,7 @@
 
             <figure class="places__card places__card_size_sm">
               <img
-                src="./img/place-4.jpg"
+                src="./img/place-4-min.jpg"
                 alt="Niigata"
                 class="places__card-pic places__card-pic_size_sm"
               />
@@ -197,7 +196,7 @@
 
             <figure class="places__card places__card_size_sm">
               <img
-                src="./img/place-5.jpg"
+                src="./img/place-5-min.jpg"
                 alt="Sapporo"
                 class="places__card-pic places__card-pic_size_sm"
               />
@@ -210,12 +209,12 @@
       <!-- Places end -->
 
       <!-- Toures start -->
-      <div class="toures">
+      <div class="toures" id="articles">
         <div class="wrapper-full">
           <div class="toures__tour tour">
             <div class="tour__pic">
               <img
-                src="./img/tour-1.jpg"
+                src="./img/tour-1-min.jpg"
                 alt="Prefecture in Focus: Tottori"
                 class="tour__thumb"
               />
@@ -247,7 +246,7 @@
             </div>
             <div class="tour__pic tour__pic_mob-first">
               <img
-                src="./img/tour-2.jpg"
+                src="./img/tour-2-min.jpg"
                 alt="Featured Neighborhood: Kyoto’s Arashiyama"
                 class="tour__thumb"
               />
@@ -259,7 +258,7 @@
       <!-- Toures end -->
 
       <!-- Top start -->
-      <section class="top">
+      <section class="top" id='locations'>
         <div class="wrapper-full">
           <h2 class="top__title section-title">Today top places to visit</h2>
 
@@ -267,7 +266,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-1.jpg"
+                  src="./img/top-pic-1-min.jpg"
                   alt="NAGOYA"
                   class="top__card-thumb"
                 />
@@ -294,7 +293,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-2.jpg"
+                  src="./img/top-pic-2-min.jpg"
                   alt="NIIGATA"
                   class="top__card-thumb"
                 />
@@ -319,7 +318,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-3.jpg"
+                  src="./img/top-pic-3-min.jpg"
                   alt="OSAKA"
                   class="top__card-thumb"
                 />
@@ -344,7 +343,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-4.jpg"
+                  src="./img/top-pic-4-min.jpg"
                   alt="SAITAMA"
                   class="top__card-thumb"
                 />
@@ -369,7 +368,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-5.jpg"
+                  src="./img/top-pic-5-min.jpg"
                   alt="UENO"
                   class="top__card-thumb"
                 />
@@ -396,7 +395,7 @@
             <div class="top__card">
               <div class="top__card-pic">
                 <img
-                  src="./img/top-pic-6.jpg"
+                  src="./img/top-pic-6-min.jpg"
                   alt="SHIBUYA"
                   class="top__card-thumb"
                 />
@@ -423,7 +422,7 @@
       <!-- Top end -->
 
       <!-- Videos start -->
-      <div class="videos">
+      <div class="videos" id='videos'>
         <div class="videos__wrapper">
           <div class="video__item"></div>
           <iframe
@@ -505,6 +504,6 @@
       </div>
     </footer>
     <!-- Footer end -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main-es5.min.js"></script>
   </body>
 </html>
