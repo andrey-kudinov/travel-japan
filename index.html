@@ -3,8 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Discover Amazing places in Japan</title>
+    <meta name="description" content=""/>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <!-- Header start -->
@@ -12,7 +40,7 @@
       <div class="wrapper">
         <div class="header__wrapper">
           <div class="header__logo">
-            <a href="/" class="header__logo link">
+            <a href="#" class="header__logo link">
               <img
                 src="./img/svg/odigo-logo.svg"
                 alt=""
@@ -26,7 +54,9 @@
                 <a href="#articles" class="header__link js-scroll">Articles</a>
               </li>
               <li class="header__item">
-                <a href="#locations" class="header__link js-scroll">Locations</a>
+                <a href="#locations" class="header__link js-scroll"
+                  >Locations</a
+                >
               </li>
               <li class="header__item">
                 <a href="#videos" class="header__link js-scroll">Videos</a>
@@ -53,7 +83,7 @@
     <!-- Main start -->
     <main class="main">
       <!-- Intro start -->
-      <section class="intro" id='sign-in'>
+      <div class="intro" id="sign-in">
         <div class="wrapper">
           <h1 class="intro__title">Discover Amazing places in Japan</h1>
           <p class="intro__subtitle">
@@ -84,7 +114,7 @@
             </fieldset>
           </form>
         </div>
-      </section>
+      </div>
       <!-- Intro end -->
 
       <!-- Benefits start -->
@@ -154,55 +184,55 @@
             <a href="#!" class="places__view-all">VIEW ALL</a>
           </div>
           <div class="places__cards">
-            <figure class="places__card places__card_size_lg">
+            <div class="places__card places__card_size_lg">
               <img
                 src="./img/place-1-min.jpg"
                 alt="Mount Fuji"
                 class="places__card-pic places__card-pic_size_lg"
               />
-              <figcaption class="places__card-title">Mount Fuji</figcaption>
+              <h3 class="places__card-title">Mount Fuji</h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
-            <figure class="places__card places__card_size_lg">
+            <div class="places__card places__card_size_lg">
               <img
                 src="./img/place-2-min.jpg"
                 alt="Kyoto"
                 class="places__card-pic places__card-pic_size_lg"
               />
-              <figcaption class="places__card-title">Kyoto</figcaption>
+              <h3 class="places__card-title">Kyoto</h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
-            <figure class="places__card places__card_size_sm">
+            <div class="places__card places__card_size_sm">
               <img
                 src="./img/place-3-min.jpg"
                 alt="Tokyo"
                 class="places__card-pic places__card-pic_size_sm"
               />
-              <figcaption class="places__card-title">Tokyo</figcaption>
+              <h3 class="places__card-title">Tokyo</h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
-            <figure class="places__card places__card_size_sm">
+            <div class="places__card places__card_size_sm">
               <img
                 src="./img/place-4-min.jpg"
                 alt="Niigata"
                 class="places__card-pic places__card-pic_size_sm"
               />
-              <figcaption class="places__card-title">Niigata</figcaption>
+              <h3 class="places__card-title">Niigata</h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
 
-            <figure class="places__card places__card_size_sm">
+            <div class="places__card places__card_size_sm">
               <img
                 src="./img/place-5-min.jpg"
                 alt="Sapporo"
                 class="places__card-pic places__card-pic_size_sm"
               />
-              <figcaption class="places__card-title">Sapporo</figcaption>
+              <h3 class="places__card-title">Sapporo</h3>
               <a href="#!" class="places__card-link"></a>
-            </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -258,7 +288,7 @@
       <!-- Toures end -->
 
       <!-- Top start -->
-      <section class="top" id='locations'>
+      <section class="top" id="locations">
         <div class="wrapper-full">
           <h2 class="top__title section-title">Today top places to visit</h2>
 
@@ -422,13 +452,12 @@
       <!-- Top end -->
 
       <!-- Videos start -->
-      <div class="videos" id='videos'>
+      <div class="videos" id="videos">
         <div class="videos__wrapper">
           <div class="video__item"></div>
           <iframe
             class="video__element"
             src="https://www.youtube.com/embed/eW2-eDiD7w0"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -443,12 +472,16 @@
       <div class="wrapper">
         <div class="footer__item">
           <div class="footer__logo">
-            <img src="./img/svg/odigo-logo-footer.svg" alt="odigo" class="footer__logo-pic">
+            <img
+              src="./img/svg/odigo-logo-footer.svg"
+              alt="odigo"
+              class="footer__logo-pic"
+            />
           </div>
           <nav class="footer__nav">
             <ul class="footer__menu">
               <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Company</h3>   
+                <h3 class="footer__menu-title">Company</h3>
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link">About</a>
@@ -466,7 +499,7 @@
 
             <ul class="footer__menu">
               <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Locations</h3>   
+                <h3 class="footer__menu-title">Locations</h3>
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link">Tokyo</a>
@@ -484,7 +517,7 @@
 
             <ul class="footer__menu">
               <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Social Media</h3>   
+                <h3 class="footer__menu-title">Social Media</h3>
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link">Facebook</a>
